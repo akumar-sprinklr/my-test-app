@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  sample_app:
+    image: ruby-sample-app-image:alpine
+    build: .
+    command: ["ruby", "/opt/myapp.rb"]
+    ports:
+      - 4567:4567
