@@ -3,6 +3,7 @@ version: '3'
 services:
   sample_app:
     image: ruby-sample-app-image:alpine
+    container_name: ruby-sample-app-container
     build: .
     command: ["ruby", "/opt/myapp.rb"]
     ports:
